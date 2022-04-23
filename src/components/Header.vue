@@ -7,16 +7,21 @@
 		</div>
 
 		<div id="search__section">
-			<div id="search__icon"></div>
-			<input type="search" id="search__input" placeholder="Search for songs">
+			<div id="search__container">
+				<i id="search__icon" class="fas fa-search"></i>
+				<input type="search" id="search__input" placeholder="Search for songs">
+			</div>
 		</div>
 
 		<div id="user__section">
-			<button id="user__notification" class="fas fa-bell"></button>
+			
+			<button id="user__notification" class="fas fa-bell"><div id="notification__status"></div></button>
 			<button id="user__settings" class="fas fa-cog"></button>
 			<div id="user__info">
-				<div id="user__icon"></div>
-				<p id="user__name"></p>
+				<div id="user__details">
+					<div id="user__icon"></div>
+					<p id="user__name">Evans Allison</p>
+				</div>
 				<button id="user__options" class="fas fa-angle-down"></button>
 			</div>
 		</div>
@@ -35,15 +40,137 @@
 <style scoped>
 	
 	#header{
-		background-color: green;
+		/*background-color: green;*/
 		height: 5rem;
 		width: 100%;
+		padding: 0 6px;
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
+	}
+
+	#logo__section{
+		width: 5rem;
+		display: flex;
+		justify-content: space-around;
+		/*align-items: center;*/
+		/*background-color: red;*/
 	}
 
 	#logo__section h3{
 		color: #00D38B;
+		font-size: 15px;
+	}
+
+	button{
+		background-color: transparent;
+		color: rgba(0, 0, 0, 0.3);
+		border: none;
+	}
+
+	#notification__status{
+		background-color: #00D38B;
+		height: .3rem;
+		width: .3rem;
+		border-radius: 100%;
+		position: absolute;
+		top: 2rem;
+		left: 0.5rem;
+	}
+
+	#search__section {
+		/*background-color: red;*/
+		/*width: 90%;*/
+		
+	}
+
+	#search__container{
+		height: 2rem;
+		width: 90%;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
+		margin: 0 5px;
+		display: flex;
+		align-items: center;
+	}
+
+	#search__section i{
+		margin: 0 5px 0 2px;
+		font-size: 12px;
+		/*position: absolute;*/
+	}
+
+	#search__section input{
+		height: 100%;
+		width: 100%;
+		border: none;
+		outline: none;
+		align-self: stretch;
+	}
+
+	#user__section{
+		/*background-color: blue;*/
+		width: 6rem;
+		display: flex;
+		justify-content: space-evenly;
+		align-self: stretch;
+	}
+
+	#user__notification{
+		position: relative;
+	}
+
+	#user__info{
+		width: 40%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#user__details{
+		/*background-color: green;*/
+		/*width: 5rem;*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#user__details p{
+		display: none;
+	}
+
+	#user__icon{
+		background-image: url(../assets/logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 1rem;
+		width: 1rem;
+		border-radius: 100%;
+	}
+
+	#user__name {
+		font-size: 10px;
+	}
+
+	@media (min-width: 600px){
+		#user__section{
+			width: 15rem;
+			align-self: stretch;
+		}
+
+		#user__section button{
+			font-size: 1rem;
+		}
+
+		#search__section{
+			width: 50%;
+			justify-content: flex-start;
+		}
+
+		#search__container{
+			/*background-color: green;*/
+		}
 	}
 
 </style>
