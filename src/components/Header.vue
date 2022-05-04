@@ -140,7 +140,7 @@
 	}
 
 	#user__icon{
-		background-image: url(../assets/logo.png);
+		background-image: url(../assets/images/user.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;

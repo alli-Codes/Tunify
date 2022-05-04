@@ -2,19 +2,24 @@
 
   <div id="container">
     <Header></Header>
+    <Songs></Songs>
+    <Albums></Albums>
   </div>
 
 </template>
 
 <script>
 import Header from './components/Header'
-// import {greeting} from './message.js'
+import Songs from './components/Songs/Songs'
+import Albums from './components/Albums/Albums'
 
 export default {
   name: 'App',
 
   components: {
-    Header
+    Header,
+    Songs,
+    Albums
   },
 }
 </script>
@@ -28,7 +33,7 @@ export default {
   }
 
 #app {
-  font-family: poppins, sans-serif;
+  font-family: lato, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
