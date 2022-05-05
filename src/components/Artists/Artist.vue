@@ -2,7 +2,7 @@
 	
 	<div id="song__container">
 		<div id="song__image">
-			<img src="../../assets/images/rema2.jpg" alt="">
+			<img src="image" alt="">
 		</div>
 		<div id="song__description">
 			<h5 id="song__title">{{artist}}</h5>
@@ -16,7 +16,7 @@
 	
 	export default {
 		name: 'Artist',
-		props: ['follows', 'artist'],
+		props: ['follows', 'artist', 'image'],
 	}
 
 </script>

@@ -4,7 +4,12 @@
 	<div id="artist__section">
 
 		<div id="container">
-			<Artist v-for="(data, index) in songData" :key="index" :artist="data.artist" :follows="data.follows" />
+			<Artist v-for="(data, index) in songData" 
+			:key="index" 
+			:artist="data.artist" 
+			:follows="data.follows" 
+			:images="data.image"
+			/>
 		</div>
 	</div>
 
@@ -25,11 +30,11 @@
 				type: 'Popular Artists',
 				isTrue: false,
 				songData: [
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
+					{follows: '23.8M Followers', artist: 'Davido', image: '../images/davido.jpg'},
+					{follows: '14.4M Followers', artist: 'Wizkid', image: '../images/wizkid.jpg'},
+					{follows: '10.1M Followers', artist: 'Burna Boy', image: '../images/burnaboy2.jpg'},
+					{follows: '3.2M Followers', artist: 'Rema', image: '../images/rema3.jpg'},
+					{follows: '2.1M Followers', artist: 'Joeboy', image: '../images/joeboy2.jpg'},
 				]
 			}
 		}
