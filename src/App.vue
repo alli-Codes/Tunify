@@ -6,6 +6,7 @@
     <Albums />
     <Artists />
     <Radios />
+    <Player />
   </div>
 
 </template>
@@ -16,6 +17,7 @@ import Songs from './components/Songs/Songs'
 import Albums from './components/Albums/Albums'
 import Artists from './components/Artists/Artists'
 import Radios from './components/Radios/Radios'
+import Player from './components/Player'
 
 export default {
   name: 'App',
@@ -25,7 +27,8 @@ export default {
     Songs,
     Albums,
     Artists,
-    Radios
+    Radios,
+    Player
   },
 }
 </script>
