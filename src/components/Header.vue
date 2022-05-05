@@ -41,14 +41,16 @@
 <style scoped>
 	
 	#header{
-		/*background-color: green;*/
+		background-color: white;
 		height: 5rem;
 		width: 100%;
 		padding: 0 6px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
+		position: sticky;
+		top: 0;
+		z-index: 1000;
 	}
 
 	#logo__section{
