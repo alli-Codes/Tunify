@@ -2,11 +2,11 @@
 
   <div id="container">
     <Header />
+    <Player />
     <Songs />
     <Albums />
     <Artists />
     <Radios />
-    <Player />
   </div>
 
 </template>

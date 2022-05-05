@@ -3,7 +3,7 @@
 	<div id="container">
 		<div id="artist__details">
 			<div id="artist__icon">
-				<img src="" alt="">
+				<img src="../../public/images/rema2.jpg" alt="">
 			</div>
 
 			<div id="artist__description">
@@ -41,11 +41,13 @@
 
 	#container{
 		background-color: green;
-		height: 5rem;
+		height: 4rem;
 		width: 100%;
 		display: flex;
-		position: sticky;
-		top: 80vh;
+		justify-content: space-around;
+		position: fixed;
+		bottom: 0;
+		z-index: 1000;
 	}
 
 </style>
