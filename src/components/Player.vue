@@ -50,4 +50,21 @@
 		z-index: 1000;
 	}
 
+	#artist__details{
+		display: flex;
+	}
+
+	#artist__icon{
+		height: 3rem;
+		width: 3rem;
+		position: relative;
+	}
+
+	#artist__icon img{
+		height: 100%;
+		width: 100%;
+		border-radius: 100%;
+		object-fit: cover;
+	}
+
 </style>
