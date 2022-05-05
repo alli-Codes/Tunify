@@ -38,7 +38,7 @@
 	}
 
 	#title h4{
-		font-size: 13px;
+		font-size: 16px;
 	}
 
 	#type{

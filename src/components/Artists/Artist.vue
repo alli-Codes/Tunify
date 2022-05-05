@@ -25,9 +25,9 @@
 	
 	#song__container{
 		/*background-color: blue;*/
-		height: 8rem;
-		width: 5rem;
-		margin: 0 1rem 0 0;
+		height: 10rem;
+		width: 6rem;
+		margin: 0 2rem 0 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -45,12 +45,12 @@
 		justify-content: center;
 		position: absolute;
 		top: 0;
-		left: 4rem;
+		left: 5rem;
 	}
 
 	#song__image{
 		/*background-color: red;*/
-		height: 5rem;
+		height: 6rem;
 		width: 100%;
 		position: relative;
 	}

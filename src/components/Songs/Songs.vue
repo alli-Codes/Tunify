@@ -50,6 +50,7 @@
 	#song__section{
 		/*background-color: green;*/
 		width: 100%;
+		margin-bottom: 1rem;
 		overflow-x: scroll;
 	}
 
