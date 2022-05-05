@@ -52,6 +52,8 @@
 
 	#artist__details{
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	#artist__icon{
@@ -65,6 +67,16 @@
 		width: 100%;
 		border-radius: 100%;
 		object-fit: cover;
+	}
+
+	#artist__description{
+		padding: .5rem;
+		font-size: 12px;
+	}
+
+	#artist__description p{
+		color: rgba(0, 0, 0, 0.4);
+		/*font-weight: 500;*/
 	}
 
 </style>
