@@ -2,7 +2,7 @@
 	
 	<div id="radio__container">
 		<div id="radio__image">
-			<img src="../../assets/images/rema2.jpg" alt="">
+			<img :src="image" alt="">
 		</div>
 		<div id="radio__description">
 			<h5 id="radio__title">{{artist}}</h5>
@@ -16,7 +16,7 @@
 	
 	export default {
 		name: 'Radio',
-		props: ['follows', 'artist'],
+		props: ['follows', 'artist', 'image'],
 	}
 
 </script>
@@ -57,9 +57,9 @@
 
 	#radio__image img{
 		height: 100%;
-		/*width: 100%;*/
+		width: 100%;
 		border-radius: 100%;
-
+		object-fit: cover;		
 	}
 
 	#radio__description{

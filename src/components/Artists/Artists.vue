@@ -8,7 +8,7 @@
 			:key="index" 
 			:artist="data.artist" 
 			:follows="data.follows" 
-			:images="data.image"
+			:image="data.image"
 			/>
 		</div>
 	</div>

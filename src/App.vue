@@ -50,4 +50,8 @@ export default {
   align-items: stretch;
 }
 
+button{
+  outline: none;
+}
+
 </style>

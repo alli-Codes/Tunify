@@ -150,7 +150,7 @@
 	}*/
 
 	#user__icon{
-		background-image: url(../assets/images/user.jpg);
+		background-image: url(../../public/images/user.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;

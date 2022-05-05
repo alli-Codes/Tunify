@@ -4,20 +4,25 @@
 	<div id="artist__section">
 
 		<div id="container">
-			<Artist v-for="(data, index) in songData" :key="index" :artist="data.artist" :follows="data.follows" />
+			<Radio v-for="(data, index) in songData" 
+			:key="index" 
+			:artist="data.artist" 
+			:follows="data.follows" 
+			:image="data.image"
+		/>
 		</div>
 	</div>
 
 </template>
 
 <script>
-	import Artist from './Radio'
+	import Radio from './Radio'
 	import Category from '../Songs/Category'
 
 	export default{
 		name: 'Radios',
 		components: {
-			Artist,
+			Radio,
 			Category
 		},
 		data() {
@@ -25,11 +30,11 @@
 				type: 'Popular Radio Stations',
 				isTrue: false,
 				songData: [
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
-					{follows: 'Call Me', artist: 'Joeboy'},
+					{follows: 'Call Me', artist: 'Joeboy', image: '../images/patoranking.jpg'},
+					{follows: 'Call Me', artist: 'Joeboy', image: '../images/ruger.jpg'},
+					{follows: 'Call Me', artist: 'Joeboy', image: '../images/joeboy2.jpg'},
+					{follows: 'Call Me', artist: 'Joeboy', image: '../images/wizkid.jpg'},
+					{follows: 'Call Me', artist: 'Joeboy', image: '../images/coolfm.jpg'},
 				]
 			}
 		}

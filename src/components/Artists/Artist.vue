@@ -2,7 +2,7 @@
 	
 	<div id="song__container">
 		<div id="song__image">
-			<img src="image" alt="">
+			<img :src="image" alt="">
 		</div>
 		<div id="song__description">
 			<h5 id="song__title">{{artist}}</h5>
@@ -57,8 +57,9 @@
 
 	#song__image img{
 		height: 100%;
-		/*width: 100%;*/
+		width: 100%;
 		border-radius: 100%;
+		object-fit: cover;
 
 	}
 
