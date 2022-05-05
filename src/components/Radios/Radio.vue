@@ -68,7 +68,7 @@
 	}
 
 	#radio__title{
-		color: #00D38B;
+		/*color: #00D38B;*/
 	}
 
 	#radio__artist{
