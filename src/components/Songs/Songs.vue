@@ -4,7 +4,13 @@
 	<div id="song__section">
 
 		<div id="container">
-			<Song  v-for="(song, key) in songData" :key="key" :title="song.title" :artist="song.artist" />
+			<Song  v-for="(song, index) in songData" 
+			:key="index" 
+			:index="index" 
+			:title="song.title" 
+			:artist="song.artist" 
+			:image="song.image" 
+			/>
 			
 		</div>
 	</div>
@@ -27,11 +33,11 @@
 			return{
 				type: 'Trending Songs',
 				songData: [
-					{title: 'Call Me', artist: 'Joeboy'},
-					{title: 'Call Me', artist: 'Joeboy'},
-					{title: 'Call Me', artist: 'Joeboy'},
-					{title: 'Call Me', artist: 'Joeboy'},
-					{title: 'Call Me', artist: 'Joeboy'},
+					{title: 'Calm Down', artist: 'Rema', image: '../images/rema2.jpg'},
+					{title: 'Heavens Gate', artist: 'Burna Boy', image: '../images/burnaboy.jpg'},
+					{title: 'Call Me', artist: 'Joeboy', image: '../images/Joeboy.jpg'},
+					{title: 'Weekend', artist: 'Patoranking', image: '../images/patoranking.jpg'},
+					{title: 'Davido', artist: 'Jowo', image: '../images/davido.jpg'},
 				]
 			}
 		}

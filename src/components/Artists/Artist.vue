@@ -2,12 +2,11 @@
 	
 	<div id="song__container">
 		<div id="song__image">
-			<div id="song__index">#{{index + 1}}</div>
-			<img :src="image" alt="">
+			<img src="../../assets/images/rema2.jpg" alt="">
 		</div>
 		<div id="song__description">
-			<h5 id="song__title">{{title}}</h5>
-			<p id="song__artist">{{artist}}</p>
+			<h5 id="song__title">{{artist}}</h5>
+			<p id="song__artist">{{follows}}</p>
 		</div>
 	</div>
 
@@ -16,8 +15,8 @@
 <script>
 	
 	export default {
-		name: 'Songs',
-		props: ['index', 'title', 'artist', 'image'],
+		name: 'Artist',
+		props: ['follows', 'artist'],
 	}
 
 </script>
@@ -58,14 +57,18 @@
 
 	#song__image img{
 		height: 100%;
-		width: 100%;
-		border-radius: 5px;
-		object-fit: cover;
+		/*width: 100%;*/
+		border-radius: 100%;
+
 	}
 
 	#song__description{
 		/*background-color: red;*/
 		font-size: 12px;
+	}
+
+	#song__title{
+		color: #00D38B;
 	}
 
 	#song__artist{

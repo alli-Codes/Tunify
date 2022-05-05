@@ -1,13 +1,12 @@
 <template>
 	
-	<div id="song__container">
-		<div id="song__image">
-			<div id="song__index">#{{index + 1}}</div>
-			<img :src="image" alt="">
+	<div id="radio__container">
+		<div id="radio__image">
+			<img src="../../assets/images/rema2.jpg" alt="">
 		</div>
-		<div id="song__description">
-			<h5 id="song__title">{{title}}</h5>
-			<p id="song__artist">{{artist}}</p>
+		<div id="radio__description">
+			<h5 id="radio__title">{{artist}}</h5>
+			<p id="radio__artist">{{follows}}</p>
 		</div>
 	</div>
 
@@ -16,15 +15,15 @@
 <script>
 	
 	export default {
-		name: 'Songs',
-		props: ['index', 'title', 'artist', 'image'],
+		name: 'Radio',
+		props: ['follows', 'artist'],
 	}
 
 </script>
 
 <style scoped>
 	
-	#song__container{
+	#radio__container{
 		/*background-color: blue;*/
 		height: 8rem;
 		width: 5rem;
@@ -49,26 +48,30 @@
 		left: 4rem;
 	}
 
-	#song__image{
+	#radio__image{
 		/*background-color: red;*/
 		height: 5rem;
 		width: 100%;
 		position: relative;
 	}
 
-	#song__image img{
+	#radio__image img{
 		height: 100%;
-		width: 100%;
-		border-radius: 5px;
-		object-fit: cover;
+		/*width: 100%;*/
+		border-radius: 100%;
+
 	}
 
-	#song__description{
+	#radio__description{
 		/*background-color: red;*/
 		font-size: 12px;
 	}
 
-	#song__artist{
+	#radio__title{
+		color: #00D38B;
+	}
+
+	#radio__artist{
 		color: rgba(0, 0, 0, 0.4);
 		font-size: 10px;
 		font-weight: bold;

@@ -1,9 +1,11 @@
 <template>
 
   <div id="container">
-    <Header></Header>
-    <Songs></Songs>
-    <Albums></Albums>
+    <Header />
+    <Songs />
+    <Albums />
+    <Artists />
+    <Radios />
   </div>
 
 </template>
@@ -12,6 +14,8 @@
 import Header from './components/Header'
 import Songs from './components/Songs/Songs'
 import Albums from './components/Albums/Albums'
+import Artists from './components/Artists/Artists'
+import Radios from './components/Radios/Radios'
 
 export default {
   name: 'App',
@@ -19,7 +23,9 @@ export default {
   components: {
     Header,
     Songs,
-    Albums
+    Albums,
+    Artists,
+    Radios
   },
 }
 </script>
