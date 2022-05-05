@@ -1,6 +1,6 @@
 <template>
 	
-	<Category :type="type" />
+	<Category :type="type" :isTrue="isTrue" />
 	<div id="album__section">
 
 		<div id="container">
@@ -30,6 +30,7 @@
 		data() {
 			return{
 				type: 'Trending Albums',
+				isTrue: true,
 				songData: [
 					{title: 'Calm Down', artist: 'Rema', image: '../images/rema2.jpg'},
 					{title: 'Heavens Gate', artist: 'Burna Boy', image: '../images/burnaboy.jpg'},

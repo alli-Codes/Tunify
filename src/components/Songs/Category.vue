@@ -5,7 +5,7 @@
 			<h4>{{type}}</h4>
 		</div>
 
-		<div id="type">
+		<div id="type" v-show="isTrue">
 			<p style="color: gray">Genre:</p>
 			<div id="options">
 				<p>Afrobeats</p>
@@ -20,7 +20,7 @@
 	
 	export default {
 		name: 'Category',
-		props: ['type']
+		props: ['type', 'isTrue']
 
 	}
 

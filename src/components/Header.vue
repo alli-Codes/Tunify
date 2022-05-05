@@ -9,7 +9,7 @@
 		<div id="search__section">
 			<div id="search__container">
 				<i id="search__icon" class="fas fa-search"></i>
-				<input type="search" id="search__input" placeholder="Search for songs">
+				<input type="search" id="search__input" placeholder="Search for songs,...">
 			</div>
 		</div>
 
@@ -88,7 +88,7 @@
 	#search__container{
 		height: 2rem;
 		width: 90%;
-		border: 1px solid rgba(0, 0, 0, 0.3);
+		/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 		border-radius: 5px;
 		margin: 0 5px;
 		display: flex;
@@ -96,7 +96,8 @@
 	}
 
 	#search__section i{
-		margin: 0 5px 0 2px;
+		color: rgba(0, 0, 0, 0.4);
+		margin: 0 5px 0 7px;
 		font-size: 12px;
 		/*position: absolute;*/
 	}
@@ -107,11 +108,17 @@
 		border: none;
 		outline: none;
 		align-self: stretch;
+		font-family: lato;
+		font-size: 12px;
+	}
+
+	#search__section input::placeholder{
+		color: rgba(0, 0, 0, 0.4);
 	}
 
 	#user__section{
-		/*background-color: blue;*/
-		width: 6rem;
+		background-color: blue;
+		width: 10rem;
 		display: flex;
 		justify-content: space-evenly;
 		align-self: stretch;
@@ -135,9 +142,9 @@
 		align-items: center;
 	}
 
-	#user__details p{
+	/*#user__details p{
 		display: none;
-	}
+	}*/
 
 	#user__icon{
 		background-image: url(../assets/images/user.jpg);
@@ -150,6 +157,7 @@
 	}
 
 	#user__name {
+		display: flex;
 		font-size: 10px;
 	}
 

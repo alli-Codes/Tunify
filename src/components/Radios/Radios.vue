@@ -1,6 +1,6 @@
 <template>
 	
-	<Category :type="type" />
+	<Category :type="type"  :isTrue="isTrue"/>
 	<div id="artist__section">
 
 		<div id="container">
@@ -23,6 +23,7 @@
 		data() {
 			return{
 				type: 'Popular Radio Stations',
+				isTrue: false,
 				songData: [
 					{follows: 'Call Me', artist: 'Joeboy'},
 					{follows: 'Call Me', artist: 'Joeboy'},
