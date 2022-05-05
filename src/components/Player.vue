@@ -14,7 +14,7 @@
 
 		<div id="player__controls">
 			<button id="prevBtn" class="fas fa-fast-backward"></button>
-			<button id="playBtn"  class="fas fa-fast-play"></button>
+			<button id="playBtn"  class="fas fa-play-circle"></button>
 			<button id="nextBtn" class="fas fa-fast-forward"></button>
 		</div>
 
@@ -40,11 +40,12 @@
 <style scoped>
 
 	#container{
-		background-color: green;
+		background-color: white;
 		height: 4rem;
 		width: 100%;
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		position: fixed;
 		bottom: 0;
 		z-index: 1000;
@@ -77,6 +78,24 @@
 	#artist__description p{
 		color: rgba(0, 0, 0, 0.4);
 		/*font-weight: 500;*/
+	}
+
+	#player__controls{
+
+	}
+
+	#player__controls button{
+		background-color: transparent;
+		color: green;
+		margin: 0 .3rem;
+		border: none;
+		font-size: 1.2rem;
+	}
+
+	#player__range{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 	}
 
 </style>
