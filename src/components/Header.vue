@@ -23,6 +23,7 @@
 					<p id="user__name">Evans Allison</p>
 				</div>
 				<button id="user__options" class="fas fa-angle-down"></button>
+				
 			</div>
 		</div>
 	</div>
@@ -117,10 +118,10 @@
 	}
 
 	#user__section{
-		background-color: blue;
-		width: 10rem;
+		/*background-color: blue;*/
+		width: 8rem;
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		align-self: stretch;
 	}
 
@@ -129,9 +130,11 @@
 	}
 
 	#user__info{
-		width: 40%;
+		/*background-color: red;*/
+		/*width: 40%;*/
 		display: flex;
 		justify-content: space-between;
+		align-self: center;
 	}
 
 	#user__details{
@@ -153,11 +156,13 @@
 		background-position: center;
 		height: 1rem;
 		width: 1rem;
+		margin-right: .5rem;
 		border-radius: 100%;
 	}
 
 	#user__name {
-		display: flex;
+		padding: 0 0 0 10px;
+		display: none;
 		font-size: 10px;
 	}
 
