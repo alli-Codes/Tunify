@@ -12,16 +12,18 @@
 			</div>
 		</div>
 
-		<div id="player__controls">
-			<button id="prevBtn" class="fas fa-fast-backward"></button>
-			<button id="playBtn"  class="fas fa-play-circle"></button>
-			<button id="nextBtn" class="fas fa-fast-forward"></button>
-		</div>
+		<div id="player__controls-parent">
+			<div id="player__controls">
+				<button id="prevBtn" class="fas fa-fast-backward"></button>
+				<button id="playBtn"  class="fas fa-play-circle"></button>
+				<button id="nextBtn" class="fas fa-fast-forward"></button>
+			</div>
 
-		<div id="player__range">
-			<p id="player__counter">0:00</p>
-			<input type="range">
-			<p id="player__duration">3:01</p>
+			<div id="player__range">
+				<p id="player__counter">0:00</p>
+				<input type="range">
+				<p id="player__duration">3:01</p>
+			</div>
 		</div>
 
 		<button id="minimizeBtn" class="fas fa-arrow-alt-v"></button>
@@ -40,8 +42,8 @@
 <style scoped>
 
 	#container{
-		background-color: white;
-		height: 4rem;
+		background-color: rgb(244, 244, 244);
+		height: 5rem;
 		width: 100%;
 		padding: 0 1rem;
 		display: flex;
@@ -81,8 +83,17 @@
 		/*font-weight: 500;*/
 	}
 
-	#player__controls{
+	#player__controls-parent{
+		/*background-color: red;*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
 
+	}
+
+	#player__controls{
+		margin: 1rem 0 .3rem 0;
 	}
 
 	#player__controls button{
@@ -106,6 +117,16 @@
 	#player__range input{
 		width: 6rem;
 		margin: 0 .2rem;
+	}
+
+	@media (min-width: 396px) {
+		#player__controls-parent{
+			flex-direction: row;
+		}
+
+		#player__controls{
+			margin: 0;
+		}	
 	}
 
 

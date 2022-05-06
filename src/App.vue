@@ -47,7 +47,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 
-  height: 100vh;
+  background-color: red;
+  /*height: 100vh;*/
+  margin: 0 0 5rem 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
