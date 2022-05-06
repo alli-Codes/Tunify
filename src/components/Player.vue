@@ -26,7 +26,7 @@
 			</div>
 		</div>
 
-		<button id="minimizeBtn" class="fas fa-arrow-alt-v"></button>
+		<button id="minimizeBtn" class="fas fa-angle-down"></button>
 	</div>
 
 </template>
@@ -43,11 +43,11 @@
 
 	#container{
 		background-color: rgb(244, 244, 244);
-		height: 5rem;
+		height: 4rem;
 		width: 100%;
 		padding: 0 1rem;
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 		position: fixed;
 		bottom: 0;
@@ -55,14 +55,16 @@
 	}
 
 	#artist__details{
+		flex: 1;
+		background-color: red;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	#artist__icon{
-		height: 3rem;
-		width: 3rem;
+		height: 2rem;
+		width: 2rem;
 		position: relative;
 	}
 
@@ -84,7 +86,7 @@
 	}
 
 	#player__controls-parent{
-		/*background-color: red;*/
+		flex: 5;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -93,7 +95,7 @@
 	}
 
 	#player__controls{
-		margin: 1rem 0 .3rem 0;
+		margin: 0 0 .5rem 0;
 	}
 
 	#player__controls button{
@@ -117,6 +119,13 @@
 	#player__range input{
 		width: 6rem;
 		margin: 0 .2rem;
+	}
+
+	#minimizeBtn{
+		flex: 1;
+		color: rgba(0, 0, 0, 0.3);
+		border: none;
+		font-size: 1rem;
 	}
 
 	@media (min-width: 396px) {
