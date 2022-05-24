@@ -8,7 +8,7 @@
 
 		<div id="search__section">
 			<div id="search__container">
-				<i id="search__icon" class="fas fa-search"></i>
+				<i id="search__icon" class="bx bx-search"></i>
 				<input type="search" id="search__input" placeholder="Search for songs,...">
 			</div>
 		</div>
