@@ -54,6 +54,10 @@
 		z-index: 1000;
 	}
 
+  #drop__btn{
+    font-size: 1.3rem;
+  }
+
 	#logo__section{
 		width: 5rem;
 		display: flex;
