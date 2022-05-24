@@ -2,7 +2,7 @@
 	
 	<div id="header">
 		<div id="logo__section">
-			<button id="drop__btn" class="fas fa-bars"></button>
+			<button id="drop__btn" class="bx bx-menu-alt-right"></button>
 			<h3>Tunify</h3>
 		</div>
 
@@ -15,8 +15,8 @@
 
 		<div id="user__section">
 			
-			<button id="user__notification" class="fas fa-bell"><div id="notification__status"></div></button>
-			<button id="user__settings" class="fas fa-cog"></button>
+			<button id="user__notification" class="bx bx-bell"><div id="notification__status"></div></button>
+			<button id="user__settings" class="bx bx-cog"></button>
 			<div id="user__info">
 				<div id="user__details">
 					<div id="user__icon"></div>
@@ -79,7 +79,7 @@
 		width: .3rem;
 		border-radius: 100%;
 		position: absolute;
-		top: 2rem;
+		top: 1.2rem;
 		left: 0.5rem;
 	}
 
