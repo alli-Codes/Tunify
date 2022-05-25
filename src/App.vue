@@ -52,6 +52,10 @@ export default {
   flex-direction: column;
   align-items: stretch;
 }
+    .vue-slider-process{
+    background-color:#00D38B !important;
+    
+  }
 
 button{
   outline: none;
