@@ -21,7 +21,10 @@
 
 			<div id="player__range">
 				<p id="player__counter">0:00</p>
-				<input type="range">
+<!-- 				<input type="range"> -->
+           <div class="slider__wrapper">
+              <vue-slider />
+           </div>   
 				<p id="player__duration">3:01</p>
 			</div>
 		</div>
@@ -32,15 +35,35 @@
 </template>
 
 <script>
+
+  import VueSlider from 'vue-slider-component'
+// you probably need to import built-in style
+  import 'vue-slider-component/theme/antd.css'
 	
 	export default {
-		name: 'Player'
+		name: 'Player',
+    
+    components: {
+      VueSlider
+    }
 	}
 
 </script>
 
 <style scoped>
+  .vue-slider{
+    width:40vw !important;
+  }
+  .slider__wrapper{
+    padding:0px .7em;
+  }
 
+  #player__duration , #player__counter{
+    padding:0px .5em;
+  }
+  .labelActiveStyle {
+    width:30em;
+  }
 	#container{
 		background-color: rgb(244, 244, 244);
 		height: 4rem;
@@ -109,6 +132,10 @@
 	#prevBtn, #nextBtn{
 		color: rgba(0, 0, 0, 0.5) !important;
 	}
+
+  .slider {
+    width: 3rem;
+  }
 
 	#player__range{
 		display: flex;
