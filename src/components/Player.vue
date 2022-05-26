@@ -14,14 +14,13 @@
 
 		<div id="player__controls-parent">
 			<div id="player__controls">
-				<button id="prevBtn" class="fas fa-fast-backward"></button>
-				<button id="playBtn"  class="fas fa-play-circle"></button>
-				<button id="nextBtn" class="fas fa-fast-forward"></button>
+				<button id="prevBtn" class="bx bx-skip-previous"></button>
+				<button id="playBtn"  class="bx bx-play-circle"></button>
+				<button id="nextBtn" class="bx bx-skip-next"></button>
 			</div>
 
 			<div id="player__range">
 				<p id="player__counter">0:00</p>
-<!-- 				<input type="range"> -->
            <div class="slider__wrapper">
               <vue-slider />
            </div>   
@@ -29,7 +28,7 @@
 			</div>
 		</div>
 
-		<button id="minimizeBtn" class="fas fa-angle-down"></button>
+		<button id="minimizeBtn" class="bx bx-chevron-down"></button>
 	</div>
 
 </template>
@@ -51,19 +50,7 @@
 </script>
 
 <style scoped>
-  .vue-slider{
-    width:40vw !important;
-  }
-  .slider__wrapper{
-    padding:0px .7em;
-  }
-
-  #player__duration , #player__counter{
-    padding:0px .5em;
-  }
-  .labelActiveStyle {
-    width:30em;
-  }
+  
 	#container{
 		background-color: rgb(244, 244, 244);
 		height: 4rem;
@@ -111,31 +98,28 @@
 	#player__controls-parent{
 		flex: 5;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: space-around;
 
 	}
 
 	#player__controls{
-		margin: 0 0 .5rem 0;
+    flex: .5;
+		margin: 0 0 .2rem 0;
 	}
 
 	#player__controls button{
 		background-color: transparent;
 		color: #00D38B;
-		margin: 0 .3rem;
+		margin: 0 .1rem;
 		border: none;
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 
 	#prevBtn, #nextBtn{
 		color: rgba(0, 0, 0, 0.5) !important;
 	}
-
-  .slider {
-    width: 3rem;
-  }
 
 	#player__range{
 		display: flex;
@@ -143,13 +127,24 @@
 		font-size: 10px;
 	}
 
-	#player__range input{
-		width: 6rem;
-		margin: 0 .2rem;
-	}
+  .vue-slider{
+    width: 30vw !important;
+    margin: 0 5px;
+  }
+  .slider__wrapper{
+/*     padding: 0px .7em; */
+  }
+
+  #player__duration , #player__counter{
+    padding: 0px .5em;
+  }
+  .labelActiveStyle {
+    width: 30em;
+  }
 
 	#minimizeBtn{
-		flex: 1;
+    background-color: none;
+		flex: .5;
 		color: rgba(0, 0, 0, 0.3);
 		border: none;
 		font-size: 1rem;
@@ -161,63 +156,19 @@
 		}
 
 		#player__controls{
+      flex: 1.5 !important;
 			margin: 0;
-		}	
+		}
+
+    #player__range{
+/*       background: blue; */
+      flex: 1;
+    }
+
+    .vue-slider{
+      width: 30vw !important;
+      margin: 0 5px;
+    }
 	}
-
-
-#player__range input[type='range'], #volume-input input[type='range'] {
-    /*-webkit-appearance: none;*/
-    background-color: transparent;
-}
-
-/*Chrome*/
-
-#player__range input[type='range']::-webkit-slider-range-progress {
-    -webkit-appearance: none;
-    background-color: #00D38B;
-    height: 20px;
-}
-
-#player__range input[type='range']::-webkit-slider-runnable-track, #volume-input input[type='range']::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    /*background-color: #00D38B;*/
-    background-color: rgba(255, 255, 255, 0.4);
-    height: 2px;
-}
-
-#player__range input[type='range']::-webkit-slider-thumb{
-    -webkit-appearance: none;
-
-    background-color: red;
-    /*background-color: #00D38B;*/
-    height: 10px;
-    width: 10px;
-    border: 3px solid white;
-    border-radius: 20px;
-
-}
-
-/** FF*/
-
-#player__range input[type='range']::-moz-range-thumb, #volume-input input[type='range']::-moz-range-thumb {
-    background-color: #00D38B;
-    height: 10px;
-    width: 10px;
-    border: 3px solid white;
-    border-radius: 20px;
-}
-
-#player__range input[type="range"]::-moz-range-progress, #volume-input input[type='range']::-moz-range-progress {
-    background-color: #00D38B;
-}
-
-#player__range input[type="range"]::-moz-range-track, #volume-input input[type='range']::-moz-range-track {
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-main::-moz-scrollbar-thumb {
-  background-color: red;
-}
 
 </style>

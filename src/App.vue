@@ -57,6 +57,11 @@ export default {
     
   }
 
+  .vue-slider-rail{
+    background: #00000024;
+    height:0.2em;
+  }
+
 button{
   outline: none;
 }
