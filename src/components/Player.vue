@@ -66,15 +66,14 @@
 
 	#artist__details{
 		flex: 1;
-		background-color: red;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	#artist__icon{
-		height: 2rem;
-		width: 2rem;
+		height: 1.5rem;
+		width: 1.5rem;
 		position: relative;
 	}
 
@@ -87,7 +86,10 @@
 
 	#artist__description{
 		padding: .5rem;
-		font-size: 12px;
+		font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 	}
 
 	#artist__description p{
@@ -150,7 +152,12 @@
 		font-size: 1rem;
 	}
 
-	@media (min-width: 396px) {
+	@media (min-width: 402px) {
+    #artist__icon{
+      height: 2rem;
+      width: 2rem;
+    }
+    
 		#player__controls-parent{
 			flex-direction: row;
 		}
@@ -166,7 +173,7 @@
     }
 
     .vue-slider{
-      width: 30vw !important;
+      width: 25vw !important;
       margin: 0 5px;
     }
 	}
