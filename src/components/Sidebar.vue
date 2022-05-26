@@ -52,7 +52,7 @@
 		<div id="store__section">
 				
 				<div id="google__card">
-					<i class="fab fa-apple"></i>
+					<i class="bx bxl-apple"></i>
 					<div id="google__text">
 						<p>Download on the</p>
 						<h5>App Store</h5>
@@ -60,7 +60,7 @@
 				</div>
 
 				<div id="google__card">
-					<i class="fab fa-google-play"></i>
+					<i class="bx bxl-play-store"></i>
 					<div id="google__text">
 						<p>GET IT ON</p>
 						<h5>Google Play</h5>
@@ -139,22 +139,22 @@
 	}
 
 	#google__card{
-		height: 4rem;
-		width: 70%;
+		height: 3.5rem;
+		width: 65%;
 		margin: 1.5rem 0;
 		border: 2px solid black;
 		border-radius: 5px;
 		display: flex;
-		justify-content: space-around;
+/* 		justify-content: space-around; */
 		align-items: center;
 	}
 
 	#google__card i{
-		font-size: 1.5rem;
+    margin: 0 .3rem;
+		font-size: 1.7rem;
 	}
 
 	#google__text{
-
 	}
 
 	#google__text p{
@@ -164,7 +164,7 @@
 
 	#google__text h5{
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 </style>
