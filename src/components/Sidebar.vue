@@ -1,32 +1,32 @@
 <template>
   <div style="height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.2); position: fixed; z-index: 1000;"></div>
-	<div id="sidebar">
+	<div id="sidebar" class="slide__In">
 		
 		<div id="browse__section">
 			<label for="Browse">Browse</label>
 			<div id="browse__items">
 				<div id="browse__item">
-					<i class="fas fa-home"></i><p>Home</p>
+					<i class="bx bx-home"></i><p>Home</p>
 				</div>
 
 				<div id="browse__item">
-					<i class="fas fa-compass"></i><p>Explore</p>
+					<i class="bx bx-compass"></i><p>Explore</p>
 				</div>
 
 				<div id="browse__item">
-					<i class="fas fa-headphones"></i><p>Songs</p>
+					<i class="bx bx-headphone"></i><p>Songs</p>
 				</div>
 
 				<div id="browse__item">
-					<i class="fas fa-user"></i><p>Artists</p>
+					<i class="bx bx-user"></i><p>Artists</p>
 				</div>
 
 				<div id="browse__item">
-					<i class="fas fa-record-vinyl"></i><p>Albums</p>
+					<i class="bx bx-album"></i><p>Albums</p>
 				</div>
 
 				<div id="browse__item">
-					<i class="fas fa-satellite-dish"></i><p>Radio</p>
+					<i class="bx bx-radio"></i><p>Radio</p>
 				</div>
 			</div>
 		</div>
@@ -35,15 +35,15 @@
 			<label for="library">Your Library</label>
 			<div id="library__items">
 				<div id="library__item">
-					<i class="fas fa-clock"></i><p>Recently Played</p>
+					<i class="bx bx-time"></i><p>Recently Played</p>
 				</div>
 
 				<div id="library__item">
-					<i class="fas fa-heart"></i><p>Favorites</p>
+					<i class="bx bx-heart"></i><p>Favorites</p>
 				</div>
 
 				<div id="library__item">
-					<i class="fas fa-record-vinyl"></i><p>Playlists</p>
+					<i class="bx bxs-playlist"></i><p>Playlists</p>
 				</div>
 
 			</div>
@@ -91,6 +91,7 @@
 		width: 13rem;
 		/*padding: 1rem 0;*/
 		position: fixed;
+    left: -100%;
 		z-index: 2000;
 		overflow-y: auto;
 		display: flex-block;
@@ -168,5 +169,21 @@
 		font-weight: bold;
 		font-size: 12px;
 	}
+
+  /*Animation Here*/
+  .slide__In{
+    left: -100%;
+    animation: slide .5s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide{
+    from{
+      left: -100%;
+    }
+    to{
+      left: 0%;
+    }
+  }
 
 </style>
