@@ -94,6 +94,7 @@
 		z-index: 2000;
 		overflow-y: auto;
 		display: flex-block;
+    box-shadow: 8px 11px 8px 0px #00000012;
 	}
 
 	#browse__section, #library__section{
@@ -150,16 +151,17 @@
 	}
 
 	#google__card i{
-    margin: 0 .3rem;
+    margin: 0 .2rem;
 		font-size: 1.7rem;
 	}
 
 	#google__text{
+    text-align: left;
 	}
 
 	#google__text p{
 		font-size: 10px;
-		text-align: left;
+/* 		text-align: left; */
 	}
 
 	#google__text h5{
