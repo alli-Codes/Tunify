@@ -2,7 +2,7 @@
 	
 	<div id="header">
 		<div id="logo__section">
-			<button id="drop__btn" class="bx bx-menu-alt-right"></button>
+			<button id="drop__btn" class="bx bx-menu-alt-right" @click="changeSlideState"></button>
 			<h3>Tunify</h3>
 		</div>
 
@@ -34,6 +34,12 @@
 	
 	export default{
 		name: 'Header',
+
+    props: {
+      changeSlideState: Function
+    },
+
+   
 	}
 
 </script>

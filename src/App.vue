@@ -1,8 +1,8 @@
 <template>
 
   <div id="container">
-    <Header />
-    <sidebar />
+    <Header :changeSlideState="changeSlideState" />
+    <sidebar :isActive="isActive" :changeSlideState="changeSlideState" />
     <Player />
     <Explore />
   </div>
@@ -17,13 +17,28 @@ import Player from './components/Player'
 
 export default {
   name: 'App',
-
+  
+  data(){
+    return {    
+      isActive: false,
+    }
+  },
   components: {
     Header,
     Sidebar,
     Explore,
     Player
   },
+
+   methods: {
+      changeSlideState() {
+        !this.isActive ? this.isActive = true : this.isActive = false
+      },
+
+     exit(){
+        this.isActive ? this.isActive = false : this.isActive = true
+      }
+    }
 }
 </script>
 

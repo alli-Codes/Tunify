@@ -1,6 +1,6 @@
 <template>
-  <div style="height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.2); position: fixed; z-index: 1000;"></div>
-	<div id="sidebar" class="slide__In">
+  <div style="height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.2); position: fixed; z-index: 1000;" v-show="isActive" @click="changeSlideState"></div>
+	<div id="sidebar" :class="isActive ? 'slide__in' : '' ">
 		
 		<div id="browse__section">
 			<label for="Browse">Browse</label>
@@ -79,6 +79,22 @@
 	export default {
 		name: 'Sidebar',
 
+    data(){
+      return {
+        slideIn: 'slide__in',
+        slideOut: 'slide__out'
+      }
+    },
+
+    props: {
+      isActive: Boolean,
+      changeSlideState: Function
+    },
+
+    methods: {
+      
+    },
+
 	}
 
 </script>
@@ -91,7 +107,8 @@
 		width: 13rem;
 		/*padding: 1rem 0;*/
 		position: fixed;
-    left: -100%;
+    transform: translateX(-100%);
+    transition:.2s;
 		z-index: 2000;
 		overflow-y: auto;
 		display: flex-block;
@@ -171,19 +188,9 @@
 	}
 
   /*Animation Here*/
-  .slide__In{
-    left: -100%;
-    animation: slide .5s ease;
-    animation-fill-mode: forwards;
+  #sidebar.slide__in{
+    transform: translateX(0);
   }
 
-  @keyframes slide{
-    from{
-      left: -100%;
-    }
-    to{
-      left: 0%;
-    }
-  }
 
 </style>
