@@ -1,5 +1,5 @@
 <template>
-	
+  <div style="height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.2); position: fixed; z-index: 1000;"></div>
 	<div id="sidebar">
 		
 		<div id="browse__section">
