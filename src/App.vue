@@ -4,10 +4,7 @@
     <Header />
     <sidebar />
     <Player />
-    <Songs />
-    <Albums />
-    <Artists />
-    <Radios />
+    <Explore />
   </div>
 
 </template>
@@ -15,10 +12,7 @@
 <script>
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
-import Songs from './components/Songs/Songs'
-import Albums from './components/Albums/Albums'
-import Artists from './components/Artists/Artists'
-import Radios from './components/Radios/Radios'
+import Explore from './components/Explore-Page'
 import Player from './components/Player'
 
 export default {
@@ -27,10 +21,7 @@ export default {
   components: {
     Header,
     Sidebar,
-    Songs,
-    Albums,
-    Artists,
-    Radios,
+    Explore,
     Player
   },
 }
