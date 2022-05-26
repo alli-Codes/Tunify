@@ -45,7 +45,7 @@
 		height: 3.5rem;
 		width: 100%;
 		padding: 0 6px;
-		margin: 0 0 1rem 0;
+/* 		margin: 0 0 1rem 0; */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
