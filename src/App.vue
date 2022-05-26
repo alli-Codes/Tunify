@@ -2,6 +2,7 @@
 
   <div id="container">
     <Header />
+    <sidebar />
     <Player />
     <Songs />
     <Albums />
@@ -13,6 +14,7 @@
 
 <script>
 import Header from './components/Header'
+import Sidebar from './components/Sidebar'
 import Songs from './components/Songs/Songs'
 import Albums from './components/Albums/Albums'
 import Artists from './components/Artists/Artists'
@@ -24,6 +26,7 @@ export default {
 
   components: {
     Header,
+    Sidebar,
     Songs,
     Albums,
     Artists,
