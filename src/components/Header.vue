@@ -22,7 +22,7 @@
 					<div id="user__icon"></div>
 					<p id="user__name">Evans Allison</p>
 				</div>
-				<button id="user__options" class="fas fa-angle-down"></button>
+				<button id="user__options" class="bx bx-chevron-down"></button>
 				
 			</div>
 		</div>
