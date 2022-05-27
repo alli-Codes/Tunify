@@ -61,7 +61,7 @@ export default {
   flex-direction: column;
   align-items: stretch;
 }
-    .vue-slider-process{
+.vue-slider-process{
     background-color:#00D38B !important;
     
   }
@@ -73,6 +73,10 @@ export default {
 
 button{
   outline: none;
+}
+
+.scrollBar::-webkit-scrollbar {
+  display: none;
 }
 
 </style>

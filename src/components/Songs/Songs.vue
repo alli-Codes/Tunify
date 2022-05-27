@@ -1,9 +1,9 @@
 <template>
 	
 	<Category :type="type" :isTrue="isTrue" />
-	<div id="song__section">
+	<div id="song__section" class="scrollBar">
 
-		<div id="container">
+		<div id="container" class="scrollBar">
 			<Song  v-for="(song, index) in songData" 
 			:key="index" 
 			:index="index" 
@@ -48,14 +48,12 @@
 <style scoped>
 	
 	#song__section{
-		/*background-color: green;*/
 		width: 100%;
 		margin-bottom: 1rem;
 		overflow-x: scroll;
 	}
 
 	#container{
-		/*background-color: pink;*/
 		padding: 0 1rem;
 		display: inline-flex;
 		overflow-x: scroll;

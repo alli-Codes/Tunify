@@ -1,9 +1,9 @@
 <template>
 	
 	<Category :type="type" :isTrue="isTrue" />
-	<div id="album__section">
+	<div id="album__section" class="scrollBar">
 
-		<div id="container">
+		<div id="container" class="scrollBar">
 			<Song v-for="(song, index) in songData" 
 			:key="index" 
 			:index="index" 
