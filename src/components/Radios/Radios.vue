@@ -32,7 +32,7 @@
 				songData: [
 					{follows: 'Call Me', artist: 'Joeboy', image: '../images/patoranking.jpg'},
 					{follows: 'Call Me', artist: 'Joeboy', image: '../images/ruger.jpg'},
-					{follows: 'Call Me', artist: 'Joeboy', image: '../images/joeboy2.jpg'},
+					{follows: 'Call Me', artist: 'Joeboy', image: '../images/Joeboy2.jpg'},
 					{follows: 'Call Me', artist: 'Joeboy', image: '../images/wizkid.jpg'},
 					{follows: 'Call Me', artist: 'Joeboy', image: '../images/coolfm.jpg'},
 				]
