@@ -52,7 +52,7 @@
 <style scoped>
   
 	#container{
-		background-color: rgb(244, 244, 244);
+		background-color: #E7E7E7;
 		height: 4rem;
 		width: 100%;
 		padding: 0 1rem;
@@ -177,5 +177,12 @@
       margin: 0 5px;
     }
 	}
+
+  @media (min-width: 500px){
+    #container{
+      background-color: #F8F8F8;
+      z-index: 2000;
+    }
+  }
 
 </style>
