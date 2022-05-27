@@ -61,6 +61,7 @@
 	}
 
   #drop__btn{
+    margin-right: 8px;
     font-size: 1.3rem;
   }
 
@@ -112,7 +113,7 @@
 	#search__section i{
 		color: rgba(0, 0, 0, 0.4);
 		margin: 0 5px 0 7px;
-		font-size: 12px;
+		font-size: 1rem;
 		/*position: absolute;*/
 	}
 
@@ -131,12 +132,17 @@
 	}
 
 	#user__section{
-		/*background-color: blue;*/
+/* 		background-color: blue; */
 		width: 8rem;
 		display: flex;
 		justify-content: space-around;
 		align-self: stretch;
+    
 	}
+
+  #user__section button{
+      font-size: 1rem;
+  }
 
 	#user__notification{
 		position: relative;
