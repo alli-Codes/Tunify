@@ -34,7 +34,7 @@
 					{follows: '14.4M Followers', artist: 'Wizkid', image: '../images/wizkid.jpg'},
 					{follows: '10.1M Followers', artist: 'Burna Boy', image: '../images/burnaboy2.jpg'},
 					{follows: '3.2M Followers', artist: 'Rema', image: '../images/rema3.jpg'},
-					{follows: '2.1M Followers', artist: 'Joeboy', image: '../images/joeboy2.jpg'},
+					{follows: '2.1M Followers', artist: 'Joeboy', image: '../images/Joeboy2.jpg'},
 				]
 			}
 		}
