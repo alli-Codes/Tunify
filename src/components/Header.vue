@@ -62,14 +62,14 @@
 
   #drop__btn{
     margin-right: 8px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
 	#logo__section{
 		width: 5rem;
 		display: flex;
 		justify-content: space-around;
-		/*align-items: center;*/
+		align-items: center;
 		/*background-color: red;*/
 	}
 
