@@ -37,6 +37,16 @@
 					{title: 'Call Me', artist: 'Joeboy', image: '../images/Joeboy.jpg'},
 					{title: 'Weekend', artist: 'Patoranking', image: '../images/patoranking.jpg'},
 					{title: 'Davido', artist: 'Jowo', image: '../images/davido.jpg'},
+          {title: 'Calm Down', artist: 'Rema', image: '../images/rema2.jpg'},
+					{title: 'Heavens Gate', artist: 'Burna Boy', image: '../images/burnaboy.jpg'},
+					{title: 'Call Me', artist: 'Joeboy', image: '../images/Joeboy.jpg'},
+					{title: 'Weekend', artist: 'Patoranking', image: '../images/patoranking.jpg'},
+					{title: 'Davido', artist: 'Jowo', image: '../images/davido.jpg'},
+          {title: 'Calm Down', artist: 'Rema', image: '../images/rema2.jpg'},
+					{title: 'Heavens Gate', artist: 'Burna Boy', image: '../images/burnaboy.jpg'},
+					{title: 'Call Me', artist: 'Joeboy', image: '../images/Joeboy.jpg'},
+					{title: 'Weekend', artist: 'Patoranking', image: '../images/patoranking.jpg'},
+					{title: 'Davido', artist: 'Jowo', image: '../images/davido.jpg'},
 				]
 			}
 		}
@@ -46,10 +56,10 @@
 <style scoped>
 	
 	#album__section{
-		/*background-color: green;*/
 		width: 100%;
 		margin-bottom: 1rem;
 		overflow-x: scroll;
+    text-align: left;
 	}
 
 	#container{

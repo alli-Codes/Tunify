@@ -115,6 +115,15 @@
     box-shadow: 8px 11px 8px 0px #00000012;
 	}
 
+  @media (min-width: 500px){
+    #sidebar{
+      background-color: #FAFAFA;
+      box-shadow: none;
+      transform: translateX(0%);
+/*       position: relative; */
+    }
+  }
+
 	#browse__section, #library__section{
 		/*background-color: pink;*/
 		width: 100%;
@@ -143,10 +152,16 @@
 
 	#browse__item:nth-child(2){
 		color: #00D38B;
-		background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+		background-image: linear-gradient(180deg, rgba(215, 252, 209, 0.05) 0%, rgba(255, 255, 255, 0) 100%), rgba(189, 189, 189, 0.05);
 		border-left: .3rem solid #00D38B;
 		padding-left: .7rem;
 	}
+
+  @media (min-width: 500px){
+    #browse__item:nth-child(2){
+      background-image: linear-gradient(180deg, rgba(215, 252, 209, 0.3), rgba(255, 255, 255, 0), rgba(196, 196, 196, 0.2));
+    }
+  }
 
 	#browse__item p, #library__item p{
 		margin: 0 0 0 1rem;

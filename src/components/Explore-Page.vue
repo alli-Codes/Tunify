@@ -28,4 +28,11 @@
   #explore{
     margin: 1rem 0 0 0;
   }
+
+  @media (min-width: 500px){
+    #explore{
+      background-color: #FAFAFA;
+      margin-left: 13rem;
+    }
+  }
 </style>

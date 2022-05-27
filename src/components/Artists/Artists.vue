@@ -35,6 +35,15 @@
 					{follows: '10.1M Followers', artist: 'Burna Boy', image: '../images/burnaboy2.jpg'},
 					{follows: '3.2M Followers', artist: 'Rema', image: '../images/rema3.jpg'},
 					{follows: '2.1M Followers', artist: 'Joeboy', image: '../images/Joeboy2.jpg'},
+          {follows: '23.8M Followers', artist: 'Davido', image: '../images/davido.jpg'},
+					{follows: '14.4M Followers', artist: 'Wizkid', image: '../images/wizkid.jpg'},
+					{follows: '10.1M Followers', artist: 'Burna Boy', image: '../images/burnaboy2.jpg'},
+					{follows: '3.2M Followers', artist: 'Rema', image: '../images/rema3.jpg'},
+					{follows: '2.1M Followers', artist: 'Joeboy', image: '../images/Joeboy2.jpg'},
+          {follows: '14.4M Followers', artist: 'Wizkid', image: '../images/wizkid.jpg'},
+					{follows: '10.1M Followers', artist: 'Burna Boy', image: '../images/burnaboy2.jpg'},
+					{follows: '3.2M Followers', artist: 'Rema', image: '../images/rema3.jpg'},
+					{follows: '2.1M Followers', artist: 'Joeboy', image: '../images/Joeboy2.jpg'},
 				]
 			}
 		}
@@ -44,10 +53,10 @@
 <style scoped>
 	
 	#artist__section{
-		/*background-color: green;*/
 		width: 100%;
 		margin-bottom: 1rem;
 		overflow-x: scroll;
+    text-align: left;
 	}
 
 	#container{
