@@ -63,8 +63,8 @@
 	}
 
 	#radio__description{
-		/*background-color: red;*/
 		font-size: 12px;
+    text-align: center;
 	}
 
 	#radio__title{

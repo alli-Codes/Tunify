@@ -29,6 +29,10 @@
     margin: 1rem 0 0 0;
   }
 
+  #song__description{
+		text-align: center;
+	}
+
   @media (min-width: 500px){
     #explore{
       background-color: #FAFAFA;

@@ -64,7 +64,6 @@
 	}
 
 	#song__description{
-		/*background-color: red;*/
 		font-size: 12px;
 	}
 
