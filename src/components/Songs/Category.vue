@@ -27,13 +27,18 @@
 </script>
 
 <style scoped>
+
+  *{
+    overflow: hidden;
+  }
 	
 	#container{
-		height: 2rem;
+		height: 3rem;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+    
 		/*position: fixed;*/
 	}
 

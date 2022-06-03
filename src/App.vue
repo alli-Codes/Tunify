@@ -1,6 +1,6 @@
 <template>
 
-  <div id="container">
+  <div id="container"  @scroll="checkScrollY">
     <Header :changeSlideState="changeSlideState" />
     <sidebar :isActive="isActive" :changeSlideState="changeSlideState" />
     <Player />
@@ -21,6 +21,7 @@ export default {
   data(){
     return {    
       isActive: false,
+      scrollY: window.scrollY,
     }
   },
   components: {
@@ -37,6 +38,10 @@ export default {
 
      exit(){
         this.isActive ? this.isActive = false : this.isActive = true
+      },
+
+     checkScrollY() {
+        console.log(scrollY)
       }
     }
 }
@@ -49,19 +54,25 @@ export default {
     margin: 0;
     box-sizing: border-box;
   }
+  body{
+    overflow-y: hidden;
+  }
 
-#app {
-  font-family: lato, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-
-  margin: 0 0 5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-.vue-slider-process{
+  #app {
+    height: 100vh;
+    background-color: #cdcdcd0a;
+    font-family: lato, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  
+    margin: 0 0 5rem 0;
+/*     display: flex; */
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .vue-slider-process{
     background-color:#00D38B !important;
     
   }
@@ -71,12 +82,24 @@ export default {
     height:0.2em;
   }
 
-button{
-  outline: none;
-}
+  button{
+    outline: none;
+  }
+  
+  .scrollBar::-webkit-scrollbar {
+    display: none !important;
+  }
 
-.scrollBar::-webkit-scrollbar {
-  display: none;
-}
+  @media (min-width: 500px){
+    #app{
+/*       background-color: rgba(239, 239, 239, 0.2); */
+    }
+
+    #header, #explore{
+/*       background-color: rgb(239, 239, 239) !important; */
+    }
+  }
+
+
 
 </style>

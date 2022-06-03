@@ -102,7 +102,7 @@
 <style scoped>
 	
 	#sidebar{
-		background-color: rgb(255, 250, 250);
+		background-color: white;
 		height: 100%;
 		width: 13rem;
 		/*padding: 1rem 0;*/
@@ -117,7 +117,6 @@
 
   @media (min-width: 500px){
     #sidebar{
-      background-color: #FAFAFA;
       box-shadow: none;
       transform: translateX(0%);
 /*       position: relative; */

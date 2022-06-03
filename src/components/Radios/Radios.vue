@@ -62,7 +62,7 @@
 	#container{
 		padding: 0 1rem;
 		display: inline-flex;
-		overflow-x: scroll;
+/* 		overflow-x: scroll; */
 	}
 
 </style>

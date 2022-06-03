@@ -39,6 +39,12 @@
       changeSlideState: Function
     },
 
+    data(){
+      return{
+        scroll: true,
+      }
+    },
+
    
 	}
 
@@ -47,7 +53,7 @@
 <style scoped>
 	
 	#header{
-		background-color: #FAFAFA;
+		background-color: #cdcdcd0a;
 		height: 3.5rem;
 		width: 100%;
 		padding: 0 6px;
@@ -95,7 +101,7 @@
 	}
 
 	#search__section {
-		/*background-color: red;*/
+		background-color: rgba(49, 53, 58, 0.02);
 		/*width: 90%;*/
 		
 	}
@@ -103,7 +109,7 @@
 	#search__container{
 		height: 2rem;
 		width: 90%;
-		/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+/* 		border: 1px solid rgba(0, 0, 0, 0.3); */
 		border-radius: 5px;
 		margin: 0 5px;
 		display: flex;
@@ -118,6 +124,7 @@
 	}
 
 	#search__section input{
+    background: transparent;
 		height: 100%;
 		width: 100%;
 		border: none;
@@ -186,6 +193,11 @@
 	}
 
 	@media (min-width: 600px){
+  #header{
+    box-shadow: 4px -2px 14px 6px #284a3e0d;
+    z-index: 10000;
+  }
+    
 		#user__section{
 			width: 15rem;
 			align-self: stretch;

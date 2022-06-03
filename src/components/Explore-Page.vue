@@ -17,8 +17,18 @@
   export default {
     name: 'Explore',
 
+    data(){
+      return{
+        
+      }
+    },
+
     components: {
       Songs, Albums, Artists, Radios
+    },
+
+    methods: {
+      
     }
   }
   
@@ -26,7 +36,12 @@
 
 <style>
   #explore{
-    margin: 1rem 0 0 0;
+    background-color: #cdcdcd0a;
+    height: 85vh;
+    display: flex-block;
+    padding: 1rem 0 0 0;
+/*     margin: .5rem 0 0 0; */
+    overflow-y: scroll;
   }
 
   #song__description{
@@ -35,7 +50,6 @@
 
   @media (min-width: 500px){
     #explore{
-      background-color: #FAFAFA;
       margin-left: 13rem;
     }
   }

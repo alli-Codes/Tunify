@@ -62,6 +62,7 @@
 		position: fixed;
 		bottom: 0;
 		z-index: 1000;
+    box-shadow: 4px -2px 14px 6px #284a3e0d;
 	}
 
 	#artist__details{
